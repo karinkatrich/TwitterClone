@@ -25,6 +25,8 @@
 		92880EFF2444A24C00F62926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92880EFE2444A24C00F62926 /* GoogleService-Info.plist */; };
 		929A0D59244AF6DA00542B7E /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A0D58244AF6DA00542B7E /* Constans.swift */; };
 		929A0D5B244AFD5000542B7E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A0D5A244AFD5000542B7E /* AuthService.swift */; };
+		929A0D5D244B108D00542B7E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A0D5C244B108D00542B7E /* UserService.swift */; };
+		929A0D5F244B140F00542B7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A0D5E244B140F00542B7E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		92880EFE2444A24C00F62926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		929A0D58244AF6DA00542B7E /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		929A0D5A244AFD5000542B7E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		929A0D5C244B108D00542B7E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		929A0D5E244B140F00542B7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B22BEA3F84A67B2D92886E3 /* Pods-TwitterClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClone.debug.xcconfig"; path = "Target Support Files/Pods-TwitterClone/Pods-TwitterClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				929A0D5A244AFD5000542B7E /* AuthService.swift */,
+				929A0D5C244B108D00542B7E /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		92880EE92443372100F62926 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				929A0D5E244B140F00542B7E /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TwitterClone/Pods-TwitterClone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -292,6 +299,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -307,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929A0D5D244B108D00542B7E /* UserService.swift in Sources */,
 				92880EF82443534700F62926 /* LoginViewController.swift in Sources */,
 				92880EF124433AC100F62926 /* NotificationController.swift in Sources */,
 				929A0D59244AF6DA00542B7E /* Constans.swift in Sources */,
@@ -314,6 +323,7 @@
 				92880ECF244336C800F62926 /* AppDelegate.swift in Sources */,
 				92880EEF24433AAC00F62926 /* ExploreController.swift in Sources */,
 				929A0D5B244AFD5000542B7E /* AuthService.swift in Sources */,
+				929A0D5F244B140F00542B7E /* User.swift in Sources */,
 				92880EFB244353CA00F62926 /* RegistrationViewController.swift in Sources */,
 				92880ED1244336C800F62926 /* SceneDelegate.swift in Sources */,
 				92880EEB244337C900F62926 /* MainTabController.swift in Sources */,
