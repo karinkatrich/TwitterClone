@@ -54,7 +54,7 @@ class FeedController: UICollectionViewController {
 
         collectionView.register(TweetCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         let imageView = UIImageView(image: UIImage(named: "twitter_logo_blue"))
-        imageView.contentMode  = .scaleAspectFit
+        imageView.contentMode  = .scaleAspectFill
         imageView.setDimensions(width: 44, height: 44)
         navigationItem.titleView = imageView
     }
