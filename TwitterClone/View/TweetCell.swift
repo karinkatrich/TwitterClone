@@ -10,6 +10,7 @@ import UIKit
 
 protocol TweetCellDelegate: class {
     func handleProfileImageTapped(_ cell: TweetCell)
+    func handleReplyTapped(_ cell: TweetCell)
 }
 
 class TweetCell: UICollectionViewCell {
@@ -41,7 +42,6 @@ class TweetCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.numberOfLines = 0
-        label.text = "Some text Caption"
         return label
     }()
 
@@ -129,7 +129,7 @@ class TweetCell: UICollectionViewCell {
     //MARK: - Selectors
 
     @objc func handleCommentTapped() {
-
+        delegate?.handleReplyTapped(self)
     }
 
     @objc func handleRetweetTapped() {
