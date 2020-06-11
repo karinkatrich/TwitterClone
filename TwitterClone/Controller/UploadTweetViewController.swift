@@ -32,7 +32,7 @@ class UploadTweetViewController: UIViewController {
         return button
     }()
 
-    private let profileImageView: UIImageView = {
+      let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
