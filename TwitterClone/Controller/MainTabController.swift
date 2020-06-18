@@ -36,7 +36,6 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //logUserOut()
         view.backgroundColor = .twitterBlue
         authenticateUserAndConfigureUI()
 
@@ -87,14 +86,6 @@ class MainTabController: UITabBarController {
             configureViewController()
             configureUI()
             fetchUser()
-        }
-    }
-
-    func logUserOut() {
-        do {
-            try Auth.auth().signOut()
-        } catch let error {
-            print("Failed to sign out \(error.localizedDescription)")
         }
     }
 
